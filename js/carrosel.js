@@ -15,3 +15,12 @@ var swiper = new Swiper(".mySwiper-grupo-home", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+var swiper = new Swiper(".mySwiper-comunicacao", {
+  slidesPerView: "auto",
+  spaceBetween: 32,
+
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
