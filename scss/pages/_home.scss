@@ -240,6 +240,9 @@
     gap: 32px;
 
     h3 {
+      margin: 0;
+      padding: 0;
+
       width: 50%;
       color: var(--semantic-accent-primary, #095534);
       font-family: var(--Family-titles, Epilogue);
@@ -278,7 +281,8 @@
   }
 
   .swiper-grupo {
-    margin-top: 128px;
+    margin-top: 64px;
+
     .swiper {
       .swiper-wrapper {
         margin-top: 8px;
@@ -530,7 +534,7 @@
 
 .numeros-reag {
   padding: 132px 0px;
-  background: #095534cb;
+  background-image: url("../../images/bg-numeros.jpeg");
 
   .title-numeros {
     margin-bottom: 48px;
@@ -724,6 +728,18 @@
     width: 328px !important;
     border-radius: 8px;
 
+    &:hover {
+      .disc {
+        border: 1px solid var(--badge-border-hover, #095534);
+        background: var(--badge-bg-hover, #2f4d44);
+        transition: 0.3s;
+
+        span {
+          color: white !important;
+        }
+      }
+    }
+
     .imagem-card {
       img {
         width: 328px !important;
@@ -741,11 +757,13 @@
       .disc {
         width: fit-content;
         padding: 4px 8px;
-        border-radius: 2px;
+        border-radius: 4px;
         border: 1px solid var(--badge-border-default, #f0f0f2);
         display: flex;
+        transition: 0.3s;
 
         span {
+          transition: 0.3s;
           color: var(--badge-text-default, #666);
           font-family: var(--font-family-body, "Open Sans");
           font-size: var(--Font-size-small, 12px);
@@ -896,4 +914,8 @@
       }
     }
   }
+}
+
+.width-max {
+  width: 200px;
 }

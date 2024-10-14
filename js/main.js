@@ -119,7 +119,7 @@ $("#contrast-toggle").on("click", function (e) {
 
 // altera as cores do menu no hover do dropdown
 $(document).ready(function () {
-  const $dropdownMenu = $(".dropdown");
+  const $dropdownMenu = $(".headerFixoMenu");
   const $headerElement = $(".header");
   const $accessibilityBar = $(".acessibillity-bar");
 
@@ -168,6 +168,28 @@ document
       dropdown.classList.remove("show");
     });
   });
+
+const counterUp = window.counterUp.default;
+
+const callback = (entries) => {
+  entries.forEach((entry) => {
+    const el = entry.target;
+    if (entry.isIntersecting && !el.classList.contains("is-visible")) {
+      counterUp(el, {
+        duration: 2000,
+        // delay: 16,
+      });
+      el.classList.add("is-visible");
+    }
+  });
+};
+
+const IO = new IntersectionObserver(callback, { threshold: 1 });
+const elements = document.querySelectorAll(".counter");
+
+elements.forEach((el) => {
+  IO.observe(el);
+});
 
 // troca das imagens em quem somos
 document.querySelectorAll(".infos a").forEach((link) => {
