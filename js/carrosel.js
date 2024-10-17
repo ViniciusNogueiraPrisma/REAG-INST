@@ -24,3 +24,13 @@ var swiper = new Swiper(".mySwiper-comunicacao", {
     el: ".swiper-pagination",
   },
 });
+
+var swiper = new Swiper(".mySwiper-teams", {
+  slidesPerView: "auto",
+  spaceBetween: 8,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

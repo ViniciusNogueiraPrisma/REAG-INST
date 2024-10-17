@@ -9,13 +9,21 @@
         vertical-align: middle;
         width: 50%;
         text-align: start !important;
-        padding: 8px 16px;
-        color: var(--text-body-medium, #575757);
+        padding: 8px 12px;
+        color: var(--table-content-header-default, #fff);
         font-family: var(--font-family-body, "Open Sans");
-        font-size: var(--font-font-size-font-size-body-small, 12px);
+        font-size: var(--Font-size-medium, 14px);
         font-style: normal;
         font-weight: 700;
-        line-height: var(--font-line-height-font-size-body-small, 18px);
+        line-height: 124%;
+
+        &::after {
+          font-size: 20px;
+        }
+
+        &:before {
+          font-size: 20px;
+        }
 
         span {
           font-weight: 400;
@@ -31,17 +39,45 @@
 
   tbody {
     border-top: none !important;
+
+    tr.odd {
+      td {
+        box-shadow: unset !important;
+      }
+    }
+
+    tr.even {
+      td {
+        box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.05) !important;
+      }
+    }
+
     tr {
       border-bottom: 1px solid var(--text-grey-scale-02);
 
       td {
         width: 50%;
         text-align: start !important;
-        border: none;
-        color: var(--text-color);
-        font-size: rem(14);
         vertical-align: middle;
-        padding: 8px 16px;
+        border: none;
+        padding: 16px 12px;
+
+        color: var(--table-content-text-default, #1a1a1a);
+        font-family: var(--font-family-body, "Open Sans");
+        font-size: var(--Font-size-large, 16px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 124%;
+
+        a {
+          text-decoration: none;
+          color: var(--table-content-text-default, #1a1a1a);
+          font-family: var(--font-family-body, "Open Sans");
+          font-size: var(--Font-size-large, 16px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: 124%;
+        }
 
         img {
           margin: 0 auto;

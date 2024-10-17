@@ -33,6 +33,42 @@ $(".titulosCentral").each(function () {
   $("#resultsTitle").append($(this));
 });
 
+// add arrow icon
+$(".dropdown-submenu").each(function () {
+  const $link = $(this).find("a.dropdown-item");
+
+  const hasNestedDropdown = $(this).find(".dropdown-menu").length > 0;
+
+  if (hasNestedDropdown) {
+    $link.addClass("has-arrow");
+  } else {
+    $link.removeClass("has-arrow");
+  }
+});
+
+$(document).ready(function () {
+  var table = $("#table-ofertas").DataTable({
+    paging: false,
+    ordering: true,
+    info: false,
+    searching: true,
+  });
+
+  $("#searchInput").on("keyup", function () {
+    table.search(this.value).draw();
+  });
+});
+
+var urlBG = window.location.pathname.split("/").pop();
+
+if (urlBG === "educacao-financeira.html") {
+  var banner = document.querySelector(".pagination-banner");
+
+  if (banner) {
+    banner.classList.add("new-bg");
+  }
+}
+
 // observes the input's :focus and :focusout event inside the search box and styles its parent element.
 
 $(".searchbox input").focus(function () {
@@ -189,29 +225,6 @@ const elements = document.querySelectorAll(".counter");
 
 elements.forEach((el) => {
   IO.observe(el);
-});
-
-// troca das imagens em quem somos
-document.querySelectorAll(".infos a").forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-
-    const imgElement = document.querySelector(".img img");
-    const textElement = document.querySelector(".img p");
-    const imgSrc = link.getAttribute("data-img");
-    const imgText = link.getAttribute("data-text");
-
-    imgElement.classList.add("fade-out");
-    textElement.classList.add("fade-out");
-
-    setTimeout(() => {
-      imgElement.src = imgSrc;
-      textElement.textContent = imgText;
-
-      imgElement.classList.remove("fade-out");
-      textElement.classList.remove("fade-out");
-    }, 300);
-  });
 });
 
 /* Carousels */
@@ -404,7 +417,6 @@ function activeInputsFocus() {
 activeInputsFocus();
 
 /* Parar o vídeo quando fechar o modal */
-
 function stopVideo() {
   let leg = $("#modalVideo iframe").attr("src");
   $("#modalVideo iframe").attr("src", leg);

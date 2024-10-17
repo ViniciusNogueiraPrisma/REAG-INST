@@ -23,9 +23,12 @@ h6,
 
 h2,
 .h2 {
-  // color: var(--text-secondary-01-default);
-  color: var(--text-color-main);
-  //   font-weight: 700 !important;
+  color: var(--semantic-accent-primary, #095534);
+  font-family: var(--font-family-titles, Epilogue);
+  font-size: var(--Font-size-H2, 38px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: var(--Font-line-height-H2, 50px);
 }
 
 .me-3 {
@@ -145,12 +148,13 @@ p,
 .paragraph {
   margin-bottom: 0px;
 
-  font-weight: 400;
+  color: var(--font-text-default, #1a1a1a);
+  font-family: var(--font-family-body, "Open Sans");
   font-size: rem(16);
-  line-height: 155%;
-
-  color: var(--text-color);
-
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Font-line-height-large, 26px);
+  
   &:not(:last-of-type) {
     margin-bottom: 24px;
   }
