@@ -280,7 +280,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 
   @media (max-width: 1200px) {
-    padding: 12px 0px;
+    padding: 24px 0px;
     display: flex;
     justify-content: space-between;
   }
@@ -404,6 +404,15 @@
       font-style: normal;
       font-weight: 400;
       line-height: var(--Font-line-height-large, 26px); /* 162.5% */
+
+      span {
+        color: var(--semantic-accent-primary, #095534);
+        font-family: var(--font-family-body, "Open Sans");
+        font-size: var(--Font-size-large, 16px);
+        font-style: normal;
+        font-weight: 700;
+        line-height: var(--Font-line-height-large, 26px);
+      }
     }
   }
 

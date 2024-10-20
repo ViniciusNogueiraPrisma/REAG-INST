@@ -651,6 +651,31 @@
     position: relative !important;
   }
 
+  .dropdown:nth-child(2) {
+    .dropdown-menu {
+      .dropdown-submenu:nth-child(2) {
+        &:hover {
+          &:before {
+            filter: grayscale(1) brightness(18.5);
+            transition: 0.3s;
+          }
+        }
+
+        &:before {
+          content: url("../../images/icon-off-header.svg");
+          position: absolute;
+          transition: 0.3s;
+          z-index: 2;
+          right: 0;
+          height: 100%;
+          margin-top: 7px;
+          margin-right: 11px;
+          display: flex;
+        }
+      }
+    }
+  }
+
   .dropdown:nth-child(1) {
     .dropdown-menu {
       .dropdown-submenu:nth-child(1) {

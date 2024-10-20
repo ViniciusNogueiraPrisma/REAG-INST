@@ -101,6 +101,17 @@ footer {
           }
         }
       }
+
+      .input-itens {
+        width: 400px;
+
+        input[type="text"] {
+          width: 100%;
+        }
+
+        input[type="submit"] {
+        }
+      }
     }
 
     .second-line {

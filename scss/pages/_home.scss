@@ -252,7 +252,7 @@
       font-family: var(--Family-titles, Epilogue);
       font-size: var(--Font-size-H2, 38px);
       font-style: normal;
-      font-weight: 600;
+      font-weight: 700;
       line-height: var(--Font-line-height-H2, 50px);
 
       @media (max-width: 1300px) {
@@ -261,7 +261,7 @@
     }
 
     p {
-      width: 50%;
+      width: 51%;
       color: var(--font-text-default, #1a1a1a);
       font-family: var(--Family-body, "Open Sans");
       font-size: var(--Font-size-large, 16px);
@@ -625,10 +625,10 @@
         padding: 24px;
         border-radius: 8px;
         background: var(--surface-primary, #095534);
-        width: 300px;
+        width: 400px;
 
-        @media (max-width: 1200px) {
-          // flex-direction: column;
+        @media (max-width: 1259px) {
+          width: 300px;
         }
 
         @media (max-width: 991px) {
@@ -794,6 +794,7 @@
   .title-comunicacao {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 32px;
 
     @media (max-width: 719px) {
@@ -817,7 +818,7 @@
       align-items: center;
 
       width: fit-content;
-      padding: 16px 18px;
+      padding: 8px 18px;
       text-decoration: none;
       color: var(--button-ghost-outline-content-default, #595959);
       font-family: var(--Family-titles, Epilogue);
@@ -827,10 +828,6 @@
       line-height: 100%;
       border-radius: var(--Default-Buttons-medium-border-radius, 8px);
       border: 1px solid var(--button-ghost-outline-border-default, #595959);
-
-      // @media (max-width: 719px) {
-      //   padding: ;
-      // }
     }
   }
 }
@@ -841,7 +838,9 @@
   .swiper-slide {
     overflow: hidden;
     width: 328px !important;
-    border-radius: 8px;
+    border-radius: var(--Default-Card-border-radius, 16px);
+    border: 1px solid var(--card-border-default, #e6e6e6);
+    background: var(--card-bg-color-default, #fff);
 
     &:hover {
       .disc {
@@ -852,6 +851,11 @@
         span {
           color: white !important;
         }
+      }
+
+      h3 {
+        transition: 0.3s;
+        color: #095534 !important;
       }
     }
 
@@ -905,6 +909,7 @@
           -webkit-box-orient: vertical;
           overflow: hidden;
           text-overflow: ellipsis;
+          transition: 0.3s;
 
           color: var(--card-text-title-default, #080808);
           font-family: var(--font-family-body, "Open Sans");
@@ -1025,7 +1030,7 @@
     }
 
     .cards-midia {
-      width: 50%;
+      width: 43%;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 16px;
@@ -1038,7 +1043,10 @@
         width: 100%;
 
         img {
+          border-radius: 16px;
           width: 100%;
+          object-fit: cover;
+          height: 100%;
         }
       }
     }

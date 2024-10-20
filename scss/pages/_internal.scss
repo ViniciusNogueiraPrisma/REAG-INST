@@ -1478,7 +1478,7 @@
 .accordion-button[aria-expanded="true"] {
   p {
     transition: 0.3s;
-    color: var(--accordion-text-accordion-text-hover, #095534);
+    font-weight: 700 !important;
   }
 }
 
@@ -2307,17 +2307,22 @@
 .accordion-btn-mobile {
   border: unset;
   background-color: unset;
-  color: var(--nav-link-nav-link-default, #383838);
-  font-family: var(--font-family-titles, Gotham);
-  font-size: var(--font-font-size-font-size-body-large, 16px);
-  font-style: normal;
-  font-weight: 700;
-  line-height: 116%; /* 18.56px */
   transition: 0.3s;
+  text-decoration: none;
+  padding: 0;
+  color: var(--font-text-default, #1a1a1a);
+  font-family: var(--font-family-titles, Epilogue);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 116%;
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .accordion-btn-mobile[aria-expanded="true"] {
-  color: #095534;
   transition: 0.3s;
 }
 
@@ -2328,7 +2333,6 @@
     margin: 0;
     padding: 0;
     color: var(--accent-color-accent, #095534);
-    font-family: var(--font-family-titles, Gotham);
     font-size: var(--font-font-size-font-size-h2, 32px);
     font-style: normal;
     font-weight: 800;
@@ -2427,7 +2431,7 @@
     }
 
     .inputs-mailing {
-      width: 50%;
+      width: 90%;
       display: flex;
       gap: 16px;
 
@@ -2461,7 +2465,7 @@
         font-family: var(--font-family-titles, Epilogue);
         font-size: var(--Font-size-H6, 20px);
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 100%;
 
         &::-ms-value {
@@ -2823,12 +2827,12 @@
   }
 
   .timeline-dot {
-    height: 16px;
-    width: 16px;
+    height: 24px;
+    width: 24px;
     background-color: #095534;
     position: absolute;
     border-radius: 50%;
-    left: -39px;
+    left: -43px;
     top: 0;
   }
 
@@ -2838,7 +2842,7 @@
       font-family: var(--font-family-titles, Epilogue);
       font-size: var(--Font-size-H2, 38px);
       font-style: normal;
-      font-weight: 600;
+      font-weight: 700;
       line-height: var(--Font-line-height-H2, 50px);
     }
 
@@ -2869,7 +2873,7 @@
       font-family: var(--font-family-titles, Epilogue);
       font-size: var(--Font-size-H5, 22px);
       font-style: normal;
-      font-weight: 600;
+      font-weight: 700;
       line-height: var(--Font-line-height-H5, 32px);
 
       @media (max-width: 767px) {
@@ -3080,7 +3084,8 @@
 }
 
 .person-pagination {
-  position: absolute;
+  display: flex;
+  gap: 16px;
 
   .person {
     display: flex;
