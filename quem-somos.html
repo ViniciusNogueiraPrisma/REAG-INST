@@ -55,6 +55,7 @@
 
   <body>
     <div class="headerFixoMenu">
+      <div class="overlay-bar" style="display: none"></div>
       <div class="acessibillity-bar">
         <div class="container container-responsivo-full">
           <div class="itens-acess">
@@ -80,10 +81,12 @@
             </div>
 
             <div class="acessibilidade">
-              <div class="funcoes">
-                <p>Acessibilidade</p>
-                <a
-                  href="#"
+              <div class="accessibility-tools funcoes">
+                <a href="./Acessibilidade">
+                  <small> Acessibilidade </small>
+                </a>
+
+                <button
                   id="contrastToggle"
                   type="button"
                   class="tool"
@@ -92,11 +95,34 @@
                   data-bs-placement="bottom"
                   title=""
                   data-bs-original-title="Contraste"
-                  ><img src="images/Contrast.svg" alt=""
-                /></a>
+                >
+                  <span class="icon-contraste"></span>
+                </button>
 
-                <a href="#"><img src="images/increase.svg" alt="" /></a>
-                <a href="#"><img src="images/decrease.svg" alt="" /></a>
+                <button
+                  id="increaseFont"
+                  type="button"
+                  class="tool"
+                  data-bs-toggle="tooltip"
+                  data-bs-trigger="hover"
+                  data-bs-placement="bottom"
+                  title=""
+                  data-bs-original-title="Aumentar o tamanho da fonte"
+                >
+                  <span class="icon-aumentar-fonte" accesskey="4"></span>
+                </button>
+
+                <button
+                  type="button"
+                  class="tool"
+                  data-bs-toggle="tooltip"
+                  data-bs-trigger="hover"
+                  data-bs-placement="bottom"
+                  title=""
+                  data-bs-original-title="Diminuir o tamanho da fonte"
+                >
+                  <span class="icon-diminuir-fonte" accesskey="5"></span>
+                </button>
               </div>
 
               <div class="linguagem">
@@ -129,14 +155,44 @@
                 >
                   Reag
                 </a>
+
                 <ul
                   class="dropdown-menu fullscreen-dropdown"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  <li><a class="dropdown-item" href="#">Institucional</a></li>
-                  <li><a class="dropdown-item" href="#">Governança</a></li>
-                  <li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Institucional</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Quem Somos</a></li>
+                      <li><a class="dropdown-item" href="#">História</a></li>
+                      <li><a class="dropdown-item" href="#">Equipe</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Governança</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Estrutura</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown-submenu">
                     <a class="dropdown-item" href="#">Risco e Compliance</a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Códigos, Manuais e Políticas</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Formulários de Referência</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Outros Documentos</a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
@@ -151,38 +207,42 @@
                 >
                   Áreas de Atuação
                 </a>
+
                 <ul
                   class="dropdown-menu fullscreen-dropdown"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  <li><a class="dropdown-item" href="#">Institucional</a></li>
-                  <li><a class="dropdown-item" href="#">Governança</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Risco e Compliance</a>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Reag Trust</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Reag Asset</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Reag Wealth</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Crédito</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Assessoria</a>
                   </li>
                 </ul>
               </div>
 
               <div class="dropdown">
                 <a
+                  href="teste.html"
                   class="dropdown-toggle"
-                  type="button"
                   id="dropdownMenuButton"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  type="button"
                 >
                   Internacional
                 </a>
-                <ul
-                  class="dropdown-menu fullscreen-dropdown"
-                  aria-labelledby="dropdownMenuButton"
-                >
-                  <li><a class="dropdown-item" href="#">Institucional</a></li>
-                  <li><a class="dropdown-item" href="#">Governança</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Risco e Compliance</a>
-                  </li>
-                </ul>
               </div>
 
               <div class="dropdown">
@@ -195,14 +255,23 @@
                 >
                   Área do Cliente
                 </a>
+
                 <ul
                   class="dropdown-menu fullscreen-dropdown"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  <li><a class="dropdown-item" href="#">Institucional</a></li>
-                  <li><a class="dropdown-item" href="#">Governança</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Risco e Compliance</a>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#"
+                      >Perspectivas Econômicas</a
+                    >
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Acontecimentos Reag</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Educação Financeira</a>
                   </li>
                 </ul>
               </div>
@@ -217,14 +286,29 @@
                 >
                   Comunicação
                 </a>
+
                 <ul
                   class="dropdown-menu fullscreen-dropdown"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  <li><a class="dropdown-item" href="#">Institucional</a></li>
-                  <li><a class="dropdown-item" href="#">Governança</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Risco e Compliance</a>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Fale Conosco</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Canal de Denúncias</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Ouvidoria</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">DPO</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Assessoria de Imprensa</a>
                   </li>
                 </ul>
               </div>
@@ -239,14 +323,29 @@
                 >
                   Contato
                 </a>
+
                 <ul
                   class="dropdown-menu fullscreen-dropdown"
                   aria-labelledby="dropdownMenuButton"
                 >
-                  <li><a class="dropdown-item" href="#">Institucional</a></li>
-                  <li><a class="dropdown-item" href="#">Governança</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Risco e Compliance</a>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Fale Conosco</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Canal de Denúncias</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Ouvidoria</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">DPO</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Assessoria de Imprensa</a>
                   </li>
                 </ul>
               </div>
@@ -265,6 +364,14 @@
                 Pesquisar
                 <img src="images/icon-busca.svg" alt="" />
               </a>
+
+              <button
+                type="button"
+                class="toggle-mobile-menu"
+                aria-label="Abrir Menu"
+              >
+                <span class="icon-nav" title="Abrir Menu"></span>
+              </button>
             </div>
           </div>
         </div>

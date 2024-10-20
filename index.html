@@ -86,10 +86,12 @@
             </div>
 
             <div class="acessibilidade">
-              <div class="funcoes">
-                <p>Acessibilidade</p>
-                <a
-                  href="#"
+              <div class="accessibility-tools funcoes">
+                <a href="./Acessibilidade">
+                  <small> Acessibilidade </small>
+                </a>
+
+                <button
                   id="contrastToggle"
                   type="button"
                   class="tool"
@@ -98,11 +100,34 @@
                   data-bs-placement="bottom"
                   title=""
                   data-bs-original-title="Contraste"
-                  ><img src="images/Contrast.svg" alt=""
-                /></a>
+                >
+                  <span class="icon-contraste"></span>
+                </button>
 
-                <a href="#"><img src="images/increase.svg" alt="" /></a>
-                <a href="#"><img src="images/decrease.svg" alt="" /></a>
+                <button
+                  id="increaseFont"
+                  type="button"
+                  class="tool"
+                  data-bs-toggle="tooltip"
+                  data-bs-trigger="hover"
+                  data-bs-placement="bottom"
+                  title=""
+                  data-bs-original-title="Aumentar o tamanho da fonte"
+                >
+                  <span class="icon-aumentar-fonte" accesskey="4"></span>
+                </button>
+
+                <button
+                  type="button"
+                  class="tool"
+                  data-bs-toggle="tooltip"
+                  data-bs-trigger="hover"
+                  data-bs-placement="bottom"
+                  title=""
+                  data-bs-original-title="Diminuir o tamanho da fonte"
+                >
+                  <span class="icon-diminuir-fonte" accesskey="5"></span>
+                </button>
               </div>
 
               <div class="linguagem">
@@ -216,35 +241,13 @@
 
               <div class="dropdown">
                 <a
+                  href="teste.html"
                   class="dropdown-toggle"
-                  type="button"
                   id="dropdownMenuButton"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  type="button"
                 >
-                  Área do Cliente
+                  Internacional
                 </a>
-
-                <ul
-                  class="dropdown-menu fullscreen-dropdown"
-                  aria-labelledby="dropdownMenuButton"
-                >
-                  <li class="dropdown-submenu">
-                    <a class="dropdown-item" href="#">Credores CMDR</a>
-                  </li>
-
-                  <li class="dropdown-submenu">
-                    <a class="dropdown-item" href="#">Ofertas Públicas</a>
-                  </li>
-
-                  <li class="dropdown-submenu">
-                    <a class="dropdown-item" href="#">Portal Reag Bank</a>
-                  </li>
-
-                  <li class="dropdown-submenu">
-                    <a class="dropdown-item" href="#">Portal Reag Wealth</a>
-                  </li>
-                </ul>
               </div>
 
               <div class="dropdown">
@@ -274,6 +277,43 @@
 
                   <li class="dropdown-submenu">
                     <a class="dropdown-item" href="#">Educação Financeira</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <a
+                  class="dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Comunicação
+                </a>
+
+                <ul
+                  class="dropdown-menu fullscreen-dropdown"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Fale Conosco</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Canal de Denúncias</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Ouvidoria</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">DPO</a>
+                  </li>
+
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#">Assessoria de Imprensa</a>
                   </li>
                 </ul>
               </div>
@@ -329,6 +369,14 @@
                 Pesquisar
                 <img src="images/icon-busca.svg" alt="" />
               </a>
+
+              <button
+                type="button"
+                class="toggle-mobile-menu"
+                aria-label="Abrir Menu"
+              >
+                <span class="icon-nav" title="Abrir Menu"></span>
+              </button>
             </div>
           </div>
         </div>
@@ -622,6 +670,8 @@
                 <div class="text-slide">
                   <h2>Você busca atendimento personalizado e sob medida?</h2>
                   <h2 class="style-text">A Reag é especialista</h2>
+
+                  <h6>Sua plataforma de negócios em soluções financeiras</h6>
                 </div>
               </div>
             </div>
@@ -850,30 +900,33 @@
         <div class="title-numeros">
           <h2>Números da Reag</h2>
         </div>
+
         <div class="cards-numeros">
           <div class="line">
             <div class="first-card">
               <h3>Administração</h3>
             </div>
 
-            <div class="card">
-              <h4 class="counter">611</h4>
-              <p>Fundos Administrados</p>
-            </div>
+            <div class="others-cards">
+              <div class="card">
+                <h4 class="counter">611</h4>
+                <p>Fundos Administrados</p>
+              </div>
 
-            <div class="card">
-              <h4 class="counter">206</h4>
-              <p>Bilhões em Patrimônio Líquido</p>
-            </div>
+              <div class="card">
+                <h4 class="counter">206</h4>
+                <p>Bilhões em Patrimônio Líquido</p>
+              </div>
 
-            <div class="card">
-              <h4 class="counter">11˚</h4>
-              <p>Lugar no ranking da Anbima</p>
-            </div>
+              <div class="card">
+                <h4 class="counter">11˚</h4>
+                <p>Lugar no ranking da Anbima</p>
+              </div>
 
-            <div class="card">
-              <h4 class="counter">1˚</h4>
-              <p>Lugar entre as gestoras independentes</p>
+              <div class="card">
+                <h4 class="counter">1˚</h4>
+                <p>Lugar entre as gestoras independentes</p>
+              </div>
             </div>
           </div>
 
@@ -882,24 +935,26 @@
               <h3>Gestão</h3>
             </div>
 
-            <div class="card">
-              <h4 class="counter">468</h4>
-              <p>Fundos Ativos</p>
-            </div>
+            <div class="others-cards">
+              <div class="card">
+                <h4 class="counter">468</h4>
+                <p>Fundos Ativos</p>
+              </div>
 
-            <div class="card">
-              <h4 class="counter">180</h4>
-              <p>Bilhões em Patrimônio Líquido</p>
-            </div>
+              <div class="card">
+                <h4 class="counter">180</h4>
+                <p>Bilhões em Patrimônio Líquido</p>
+              </div>
 
-            <div class="card">
-              <h4 class="counter">9˚</h4>
-              <p>Lugar no ranking da Anbima</p>
-            </div>
+              <div class="card">
+                <h4 class="counter">9˚</h4>
+                <p>Lugar no ranking da Anbima</p>
+              </div>
 
-            <div class="card">
-              <h4 class="counter">1˚</h4>
-              <p>Lugar entre as gestoras independentes</p>
+              <div class="card">
+                <h4 class="counter">1˚</h4>
+                <p>Lugar entre as gestoras independentes</p>
+              </div>
             </div>
           </div>
         </div>

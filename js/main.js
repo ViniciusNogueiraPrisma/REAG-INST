@@ -69,7 +69,40 @@ if (urlBG === "educacao-financeira.html") {
   }
 }
 
-// observes the input's :focus and :focusout event inside the search box and styles its parent element.
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdowns = document.querySelectorAll(".header .dropdown");
+
+  dropdowns.forEach(function (dropdown) {
+    const toggle = dropdown.querySelector(".dropdown-toggle");
+    const menu = dropdown.querySelector(".dropdown-menu");
+
+    toggle.addEventListener("mouseenter", function () {
+      menu.classList.add("show");
+      toggle.classList.add("hover-active");
+    });
+
+    dropdown.addEventListener("mouseleave", function () {
+      menu.classList.remove("show");
+      toggle.classList.remove("hover-active");
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const submenus = document.querySelectorAll(".dropdown-submenu");
+
+  submenus.forEach((submenu) => {
+    const firstItem = submenu.querySelector(".dropdown-item");
+
+    submenu.addEventListener("mouseenter", function () {
+      firstItem.classList.add("active-item");
+    });
+
+    submenu.addEventListener("mouseleave", function () {
+      firstItem.classList.remove("active-item");
+    });
+  });
+});
 
 $(".searchbox input").focus(function () {
   $(".searchbox .input-group").addClass("focused-border");

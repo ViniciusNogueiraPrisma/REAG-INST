@@ -91,6 +91,32 @@
       display: flex;
       align-items: center;
       gap: 8px;
+
+      a {
+        color: var(----color-neutral-white, #fff);
+        font-family: var(--font-family-body, "Open Sans");
+        font-size: var(--Font-size-medium, 14px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--Font-line-height-medium, 24px); /* 171.429% */
+      }
+
+      small {
+        color: var(----color-neutral-white, #fff);
+        font-family: var(--font-family-body, "Open Sans");
+        font-size: var(--Font-size-medium, 14px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: var(--Font-line-height-medium, 24px); /* 171.429% */
+      }
+
+      button {
+        background-color: unset;
+        border: unset;
+        padding: 0;
+        margin: 0;
+        line-height: 0;
+      }
     }
 
     .linguagem {
@@ -253,12 +279,22 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 
+  @media (max-width: 1200px) {
+    padding: 12px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .logo {
     display: flex;
     align-items: center;
 
     img {
       // width: 164px;
+
+      @media (max-width: 1463px) {
+        width: 115px;
+      }
     }
   }
 }
@@ -279,6 +315,14 @@
   display: flex;
   justify-content: flex-end;
 
+  @media (max-width: 1200px) {
+    align-items: center;
+
+    .open-searchbox {
+      display: none;
+    }
+  }
+
   a {
     display: flex;
     align-items: center;
@@ -290,6 +334,12 @@
     font-style: normal;
     font-weight: 300;
     line-height: 116%;
+
+    @media (max-width: 1463px) {
+      gap: 32px;
+      font-size: 16px;
+      gap: 8px;
+    }
 
     &:hover {
       color: inherit;
@@ -318,6 +368,10 @@
       font-style: normal;
       font-weight: 600;
       line-height: var(--Font-line-height-H2, 50px); /* 131.579% */
+
+      @media (max-width: 1200px) {
+        font-size: 36px;
+      }
     }
 
     h3 {
@@ -330,7 +384,12 @@
       font-size: var(--Font-size-H3, 26px);
       font-style: normal;
       font-weight: 400;
-      line-height: var(--Font-line-height-H3, 36px); /* 138.462% */
+      line-height: var(--Font-line-height-H3, 36px);
+
+      @media (max-width: 1200px) {
+        font-size: 24px;
+        line-height: var(--Font-line-height-H3, 32px);
+      }
     }
 
     p:last-of-type {
@@ -353,6 +412,15 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 32px;
+
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 667px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 24px;
+    }
 
     .cards {
       border-radius: 8px;

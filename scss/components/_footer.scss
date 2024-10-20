@@ -2,6 +2,7 @@ footer {
   padding-top: 64px;
   padding-bottom: 30px;
   background: var(--estrutura-footer-background-mapa, #2b313b);
+  overflow: hidden;
 
   .content-footer {
     .first-line {

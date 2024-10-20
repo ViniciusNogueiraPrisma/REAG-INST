@@ -481,6 +481,10 @@
           .text-slide {
             width: 928px;
 
+            @media (max-width: 1200px) {
+              width: 100%;
+            }
+
             h2 {
               margin: 0;
               padding: 0;
@@ -489,20 +493,58 @@
               font-size: var(--Font-size-Display, 52px);
               font-style: normal;
               font-weight: 300;
-              line-height: var(--Font-line-height-display, 70px); /* 134.615% */
+              line-height: var(--Font-line-height-display, 70px);
+
+              @media (max-width: 991px) {
+                color: var(--semantic-on-image, #fff);
+                font-family: var(--font-family-titles, Epilogue);
+                font-size: var(--Font-size-Display, 40px);
+                font-style: normal;
+                font-weight: 300;
+                line-height: var(--Font-line-height-display, 48px); /* 120% */
+              }
+            }
+
+            h6 {
+              margin-top: 40px;
+              color: var(--semantic-on-image, #fff);
+              font-family: var(--font-family-titles, Epilogue);
+              font-size: var(--Font-size-H6, 20px);
+              font-style: normal;
+              font-weight: 700;
+              line-height: var(--Font-line-height-H6, 28px);
+
+              @media (max-width: 991px) {
+                color: var(--semantic-on-image, #fff);
+                font-family: var(--font-family-titles, Epilogue);
+                font-size: var(--Font-size-H6, 18px);
+                font-style: normal;
+                font-weight: 700;
+                line-height: var(--Font-line-height-H6, 26px); /* 144.444% */
+              }
             }
 
             .style-text {
-              border-radius: 2px;
+              border-radius: 8px;
               width: fit-content;
-              padding: 0px 8px;
+              padding: 16px;
               background: var(--surface-primary, #095534);
+
               color: var(--semantic-on-image, #fff);
               font-family: var(--Family-titles, Epilogue);
               font-size: var(--Font-size-Display, 52px);
               font-style: normal;
               font-weight: 700;
-              line-height: var(--Font-line-height-display, 70px); /* 134.615% */
+              line-height: var(--Font-line-height-display, 70px);
+
+              @media (max-width: 991px) {
+                color: var(--semantic-on-image, #fff);
+                font-family: var(--font-family-titles, Epilogue);
+                font-size: var(--Font-size-Display, 40px);
+                font-style: normal;
+                font-weight: 700;
+                line-height: var(--Font-line-height-display, 48px); /* 120% */
+              }
             }
           }
         }
@@ -519,6 +561,10 @@
       width: fit-content;
       bottom: 0;
       margin-top: -284px;
+
+      @media (max-width: 700px) {
+        margin-top: -230px;
+      }
 
       .swiper-pagination-bullet {
         transition: 0.3s;

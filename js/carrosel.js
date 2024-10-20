@@ -2,6 +2,7 @@ var swiper = new Swiper(".mySwiper", {
   effect: "fade",
 
   pagination: {
+    clickable: true,
     el: ".swiper-pagination",
   },
 });
