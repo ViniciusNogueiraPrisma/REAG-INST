@@ -116,7 +116,6 @@ body {
       padding-left: 0px;
       border-radius: 4px;
       border: 1px solid var(--colors-grey-grey-85, #dedede);
-      background: var(--surface-surface-light-alternative, #f7f7f7);
       border-radius: 4px;
 
       button {
@@ -144,12 +143,12 @@ body {
         &::placeholder {
           color: var(--colors-grey-70, #e0e0e0);
 
-          /* Menu/Page */
-          font-family: var(--font-family-titles, Gotham);
-          font-size: var(--font-font-size-font-size-body-large, 16px);
+          color: var(--font-text-default, #1a1a1a);
+          font-family: var(--font-family-body, "Open Sans");
+          font-size: var(--Font-size-medium, 14px);
           font-style: normal;
           font-weight: 400;
-          line-height: var(--font-line-height-font-size-body-large, 26px);
+          line-height: var(--Font-line-height-medium, 24px); /* 171.429% */
         }
       }
     }
@@ -408,6 +407,26 @@ body {
     display: flex;
     overflow: auto;
     padding-bottom: 200px;
+
+    .nav-mobile {
+      .main-accordion-item-mobile:nth-child(2) {
+        .pages {
+          .item:nth-child(2) {
+            &:before {
+              content: url(../../images/icon-off-header.svg);
+              position: absolute;
+              transition: 0.3s;
+              z-index: 2;
+              right: 0;
+              height: 100%;
+              margin-top: 7px;
+              margin-right: 11px;
+              display: flex;
+            }
+          }
+        }
+      }
+    }
   }
 
   &.active {

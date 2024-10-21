@@ -387,7 +387,6 @@
       padding: 0;
 
       color: var(--text-others-color-text-inverse, #fff);
-      font-family: var(--font-family-titles, Gotham);
       font-size: var(--font-font-size-font-size-h1, 48px);
       font-style: normal;
       font-weight: 300;
@@ -435,7 +434,7 @@
       padding: 0;
 
       color: var(--text-others-color-text-inverse, #fff);
-      font-family: var(--font-family-titles, Gotham);
+
       font-size: var(--font-font-size-font-size-h2, 32px);
       font-style: normal;
       font-weight: 400;
@@ -455,7 +454,7 @@
     margin-bottom: 24px;
 
     color: var(--text-titles-titles, #161616);
-    font-family: var(--font-family-titles, Gotham);
+
     font-size: var(--font-font-size-font-size-h2, 32px);
     font-style: normal;
     font-weight: 700;
@@ -478,7 +477,7 @@
 
   strong {
     color: var(--accent-color-accent, #095534);
-    font-family: var(--font-family-titles, Gotham);
+
     font-size: var(--font-font-size-font-size-h2, 32px);
     font-style: normal;
     font-weight: 800;
@@ -513,7 +512,6 @@
 
       color: var(--text-titles-subtitle, #095534);
 
-      font-family: var(--font-family-titles, Gotham);
       font-size: var(--font-font-size-font-size-h3, 28px);
       font-style: normal;
       font-weight: 400;
@@ -633,7 +631,7 @@
             transition: 0.3s;
 
             color: var(--text-titles-subtitle, #095534);
-            font-family: var(--font-family-titles, Gotham);
+
             font-size: var(--font-font-size-font-size-h6, 18px);
             font-style: normal;
             font-weight: 700;
@@ -1111,7 +1109,7 @@
         margin: 0;
         padding: 0;
         color: var(--text-titles-titles, #161616);
-        font-family: var(--font-family-titles, Gotham);
+
         font-size: var(--font-font-size-font-size-h2, 32px);
         font-style: normal;
         font-weight: 500;
@@ -1254,7 +1252,7 @@
       padding: 0;
 
       color: var(--text-titles-titles, #161616);
-      font-family: var(--font-family-titles, Gotham);
+
       font-size: var(--font-font-size-font-size-h2, 32px);
       font-style: normal;
       font-weight: 400;
@@ -1500,7 +1498,7 @@
       margin: 0;
       padding: 0;
       color: var(--text-titles-titles, #161616);
-      font-family: var(--font-family-titles, Gotham);
+
       font-size: var(--font-font-size-font-size-h2, 32px);
       font-style: normal;
       font-weight: 400;
@@ -1602,7 +1600,7 @@
             padding: 0;
 
             color: var(--text-body-xlarge, #161616);
-            font-family: var(--font-family-titles, Gotham);
+
             font-size: var(--font-font-size-font-size-h6, 18px);
             font-style: normal;
             font-weight: 700;
@@ -1853,7 +1851,7 @@
     padding: 0px;
 
     color: var(--text-titles-titles, #161616);
-    font-family: var(--font-family-titles, Gotham);
+
     font-size: var(--font-font-size-font-size-h2, 32px);
     font-style: normal;
     font-weight: 500;
@@ -1961,7 +1959,7 @@
     padding: 0;
 
     color: var(--text-titles-titles, #161616);
-    font-family: var(--font-family-titles, Gotham);
+
     font-size: var(--font-font-size-font-size-h2, 32px);
     font-style: normal;
     font-weight: 500;
@@ -2069,7 +2067,7 @@
 
       input[type="submit"] {
         color: var(--text-others-color-text-inverse, #fff);
-        font-family: var(--font-family-titles, Gotham);
+
         font-size: var(--font-font-size-font-size-body-large, 16px);
         font-style: normal;
         font-weight: 600;
@@ -2088,7 +2086,7 @@
 
         &::placeholder {
           color: var(--text-others-color-text-inverse, #fff);
-          font-family: var(--font-family-titles, Gotham);
+
           font-size: var(--font-font-size-font-size-body-large, 16px);
           font-style: normal;
           font-weight: 500;
@@ -2104,7 +2102,7 @@
         background: var(--brand-secondary-10, #f7f7f7);
         text-align: center;
         color: var(--text-body-large, #383838);
-        font-family: var(--font-family-titles, Gotham);
+
         font-size: var(--font-font-size-font-size-body-large, 16px);
         font-style: normal;
         font-weight: 600;
@@ -2134,7 +2132,7 @@
         margin: 0;
         padding: 0;
         color: var(--text-titles-subtitle, #095534);
-        font-family: var(--font-family-titles, Gotham);
+
         font-size: var(--font-font-size-font-size-h3, 28px);
         font-style: normal;
         font-weight: 400;
@@ -2224,8 +2222,6 @@
   }
 }
 
-
-
 .logo-mobile-main {
   background-color: #095534;
   padding: 20px 32px;
@@ -2274,7 +2270,7 @@
 
     li {
       color: var(--text-titles-titles, #ffffff);
-      font-family: var(--font-family-titles, Gotham);
+
       font-size: var(--font-font-size-font-size-h2, 16px);
       font-style: normal;
       font-weight: 700;
