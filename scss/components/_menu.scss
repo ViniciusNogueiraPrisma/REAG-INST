@@ -406,6 +406,8 @@ body {
 
   .menu-body {
     display: flex;
+    overflow: auto;
+    padding-bottom: 200px;
   }
 
   &.active {
