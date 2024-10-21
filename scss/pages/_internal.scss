@@ -3838,6 +3838,10 @@
       border-radius: var(--Default-Card-border-radius, 16px);
       background: var(--surface-primary, #095534);
 
+      @media (max-width: 1659px) {
+        padding: 64px 32px;
+      }
+
       @media (max-width: 1200px) {
         padding: 64px 36px;
       }
