@@ -2528,6 +2528,7 @@
 
   .item-prop {
     display: flex;
+    overflow: hidden;
 
     @media (max-width: 991px) {
       flex-direction: column;
@@ -3341,6 +3342,7 @@
 }
 
 .processo-wealth {
+  overflow: hidden;
   background: var(--surface-lighest, #f0f0f2);
 
   .processo-flex-content {
@@ -3671,6 +3673,7 @@
 .internacional {
   .title-inter {
     display: flex;
+    overflow: hidden;
     gap: 32px;
 
     @media (max-width: 1200px) {
@@ -4049,6 +4052,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 
     h2 {
       margin: 0;
@@ -4209,6 +4213,7 @@
 
 .podcast-title {
   padding-top: 132px;
+  overflow: hidden;
 
   h2 {
     color: #095534 !important;
@@ -4541,5 +4546,16 @@
 
 #table-ofertas {
   overflow: auto;
-  table-layout: auto;
+
+  @media (max-width: 1200px) {
+    table-layout: auto;
+  }
+}
+
+.wealth {
+  overflow: hidden;
+}
+
+.ofertas #table-ofertas th {
+  width: 50% !important;
 }
