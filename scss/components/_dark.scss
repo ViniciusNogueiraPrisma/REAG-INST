@@ -1,214 +1,477 @@
 [data-theme="dark"] {
-  .acessibillity-bar .content .left-top-header p {
-    color: white;
+  .acessibillity-bar.active {
+    background-color: #1a1a1a;
   }
 
-  .icon-contraste:before {
-    color: white;
+  .acessibillity-bar.fixed {
+    background-color: #1a1a1a;
   }
 
-  .icon-aumentar-fonte:before {
-    color: white;
-  }
-
-  .icon-diminuir-fonte:before {
-    color: white;
-  }
-
-  .acessibillity-bar .content .right-top-header .drop-idiomas .dropdown-toggle {
-    color: white;
-  }
-
-  .header
-    .content
-    .nav-menu-header
-    > ul
-    .header-navigation-item
-    .dropdown-toggle {
-    color: white;
-  }
-
-  .icon-busca:before {
-    color: white;
-  }
-
-  .primary-button {
-    background-color: #333333;
-    border: 1px solid #333333;
-    color: white;
-  }
-
-  .footer-fixed .top-footer-fixed .button-mapa-site {
-    color: white;
-  }
-
-  .icon-exibir:before {
-    color: white;
-  }
-
-  .footer .footer-bottom-content p {
-    color: white;
-  }
-
-  .termos-condicoes li a {
-    color: white !important;
-  }
-
-  .voltar-topo {
-    color: white;
-  }
-
-  .footer .footer-bottom-content .byRiweb img {
-    filter: brightness(16.5);
-  }
-
-  .footer-fixed .list-menu-footer > div h5 {
-    color: white;
-  }
-
-  .footer-fixed .list-menu-footer > div ul li a {
-    color: white;
-  }
-
-  .form-select-filtro select {
-    filter: brightness(14);
-  }
-
-  .logo-white {
-    filter: contrast(0.1) brightness(3.5);
-  }
-
-  .acessibillity-bar .content .left-top-header p::before {
-    color: white;
-  }
-
-  .qs-texts h2 {
-    color: white;
-  }
-
-  .proposito-qs h1 {
-    color: white;
-  }
-
-  .proposito-qs h2 {
-    color: white;
-  }
-
-  .section-valores-qs {
+  .header.active {
     background-color: #1d1d1d;
   }
 
-  .itens-valores h1 {
-    color: white;
+  .header.fixed {
+    background-color: #1d1d1d;
   }
 
-  .title-valores {
-    h1 {
-      color: white;
-    }
-
-    span {
-      color: white;
-    }
+  .navigation-page .dropdown-menu li a:hover {
+    background-color: #1d1d1d;
   }
 
-  .header-interno:before {
-    background: linear-gradient(
-      90deg,
-      rgb(22 22 22) 0%,
-      rgba(255, 255, 255, 0) 85%
-    );
-  }
-
-  .texts-lider {
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
-  }
-
-  .infos-lider h1 {
-    color: white;
-  }
-
-  .infos-lider span {
-    color: white;
-  }
-
-  .curr-lider img {
-    filter: contrast(0.5) brightness(16.5);
-  }
-
-  .curr-lider span {
-    color: white;
-  }
-
-  .timeline__item h3 {
-    color: white;
-  }
-
-  .flex h1 {
-    color: white;
-  }
-
-  .form-select-filtro select {
-    color: white;
-  }
-
-  .flex span {
-    color: white;
-  }
-
-  h1 {
-    color: white;
-  }
-
-  h2 {
-    color: white;
-  }
-
-  .nav-tabs .nav-item.show .nav-link,
-  .nav-tabs .nav-link.active {
-    background-color: transparent;
-  }
-
-  // .table thead tr th {
-  //   // color: white;
-  // }
-
-  // .table thead tr {
-  //   border-bottom: 1px solid white;
-  // }
-
-  .infos-ri {
-    background-color: transparent;
-  }
-
-  .txt-icon-infos-ri span strong {
-    color: white;
-  }
-
-  .txt-icon-infos-ri img {
-    filter: contrast(0.5) brightness(18.5);
+  .dropdown-submenu .active-item {
+    background-color: #1d1d1d;
   }
 
   .icon-exibir:before {
     color: white !important;
   }
 
-  .logo-colorida {
-    filter: contrast(0.5) brightness(18.5);
+  .banner-page
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .content-slide
+    .text-slide
+    .style-text {
+    background-color: #1d1d1d;
   }
 
-  .header-interno .info-header-interno .list-history-page li a {
+  .grupo-page .title-grupo h3 {
     color: white;
   }
 
-  .table-hover > tbody > tr:hover > * {
+  .grupo-page .title-grupo p {
     color: white;
-    cursor: pointer;
   }
 
-  .button-text {
-    color: #fff !important;
+  .grupo-page .title-grupo p span {
+    color: white;
+  }
+
+  .grupo-page .swiper-grupo .swiper .swiper-btn {
+    border: 1px solid white;
+  }
+
+  .grupo-page .swiper-grupo .swiper .swiper-button-next::after {
+    filter: grayscale(1) brightness(5.5);
+  }
+
+  .grupo-page .swiper-grupo .swiper .swiper-btn {
+    border: 1px solid white;
+  }
+
+  .grupo-page .swiper-grupo .swiper .swiper-button-prev::after {
+    filter: grayscale(1) brightness(5.5);
+  }
+
+  .grupo-page
+    .swiper-grupo
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .slide-banner:before {
+    background: linear-gradient(180deg, rgba(27, 69, 52, 0) 0%, #1d1d1d 100%);
+  }
+
+  .sobre-home {
+    background-color: #1d1d1d;
+  }
+
+  .sobre-home .content-current h1 {
+    color: black;
+  }
+
+  .sobre-home .content-current a {
+    background-color: black;
+  }
+
+  .numeros-reag {
+    background-color: #1d1d1d;
+    background-image: unset;
+  }
+
+  .numeros-reag .cards-numeros .line .first-card {
+    background-color: #1a1a1a;
+  }
+
+  .comunicacao-home .title-comunicacao h2 {
+    color: white;
+  }
+
+  .comunicacao-home .title-comunicacao a {
+    border: 1px solid white;
+    color: white;
+  }
+
+  .cards-comunicacao .swiper-slide:hover .disc {
+    background-color: #1a1a1a;
+  }
+
+  .cards-comunicacao .swiper-slide .content-card .main-informations h3 {
+    color: black !important;
+  }
+
+  .cards-comunicacao .swiper-pagination .swiper-pagination-bullet-active {
+    color: white;
+    background-color: white;
+  }
+
+  .midia-home .itens-midia .text-midia h3 {
+    color: white;
+  }
+
+  .midia-home .itens-midia .text-midia p {
+    color: white;
+  }
+
+  .midia-home .itens-midia .text-midia a {
+    color: white;
+    border: 1px solid white;
+  }
+
+  .midia-home .itens-midia .cards-midia .cards img {
+    filter: grayscale(1) brightness(1.5);
+  }
+
+  .parceiros-midia {
+    background-color: #1a1a1a;
+  }
+
+  .mailing-home .itens-mailing {
+    background-color: #1a1a1a;
+  }
+
+  .parceiros-midia img {
+    width: auto;
+    filter: grayscale(1) invert(1) brightness(2.5);
+  }
+
+  footer .content-footer .first-line .itens input[type="submit"] {
+    background-color: #1a1a1a;
+  }
+
+  footer .termos-final {
+    background-color: #1a1a1a;
+  }
+
+  .banner-internal .main-image:before {
+    background: linear-gradient(
+        180deg,
+        rgba(8, 81, 44, 0.29) 0%,
+        rgb(0 0 0 / 90%) 100%
+      ),
+      rgba(0, 0, 0, 0.4);
+  }
+
+  .banner-internal .main-image img {
+    filter: grayscale(1) brightness(0.5);
+  }
+
+  .banner-internal .pagination-banner .itens a.last-link {
+    color: white;
+  }
+
+  .about-reag .about-content h2 {
+    color: white;
+  }
+
+  .about-reag .about-content h3 {
+    color: white;
+  }
+
+  .about-reag .about-content p {
+    color: white;
+  }
+
+  .about-reag .about-content p span {
+    color: white;
+  }
+
+  .timeline-hist .timeline-dot {
+    background-color: white;
+  }
+
+  .timeline-hist .timeline-items::before {
+    background-color: white;
+  }
+
+  .timeline-hist .timeline-date p {
+    color: white;
+  }
+
+  .timeline-hist .timeline-date span {
+    color: white;
+  }
+
+  .full-team .team-cards .cards .content-person h3 {
+    color: white;
+  }
+
+  .full-team .team-cards .cards .content-person p {
+    color: white;
+  }
+
+  .full-team .team-cards .cards .social-person a {
+    color: white;
+  }
+
+  .full-team .team-cards .cards .social-person img {
+    filter: grayscale(1) brightness(4.5);
+  }
+
+  .main-modal-equipe .pagination-teams .btn-teams {
+    background-color: #1d1d1d;
+  }
+
+  .full-screen-main-div img {
+    filter: grayscale(1) invert(1) brightness(1.5);
+  }
+
+  .itens-list-principal .list a {
+    background-color: unset;
+    color: white;
+  }
+
+  .itens-list-principal .list a p {
+    color: white;
+  }
+
+  .itens-list-principal .list a img {
+    filter: grayscale(1) brightness(4.5);
+  }
+
+  .reag-trust .title-trust h2 {
+    color: white;
+  }
+
+  .reag-trust .title-trust p {
+    color: white;
+  }
+
+  .reag-trust .markdown-trust p {
+    color: white;
+  }
+
+  .reag-trust .markdown-trust p img {
+    filter: grayscale(1) brightness(4.5);
+  }
+
+  .atendimento-trust {
+    background-color: #1d1d1d;
+  }
+
+  .atendimento-trust .content-atendimento h2 {
+    color: white;
+  }
+
+  .atendimento-trust .content-atendimento p {
+    color: white;
+  }
+
+  .divulgacao-infos h2 {
+    color: white;
+  }
+
+  .title-fundos h3 {
+    color: white;
+  }
+
+  .tipos-fundos .cards {
+    background: #1a1a1a;
+  }
+
+  .item-accordion .names-accordion p {
+    color: black !important;
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    color: black !important;
+  }
+
+  .title-wealth h2 {
+    color: white;
+  }
+
+  .title-wealth h3 {
+    color: white;
+  }
+
+  .flex-content .text-content p {
+    color: white;
+  }
+
+  .img-content img {
+    filter: grayscale(1);
+  }
+
+  .processo-wealth {
+    background-color: #1d1d1d;
+  }
+
+  .processo-wealth .processo-flex-content .text-processo h2 {
+    color: white;
+  }
+
+  .processo-wealth .processo-flex-content .text-processo p {
+    color: white;
+  }
+
+  .img-processo img {
+    filter: grayscale(1);
+  }
+
+  .propostas-wealth {
+    background-color: #1d1d1d;
+  }
+
+  .propostas-wealth .title-prop h2 {
+    color: white;
+  }
+
+  .propostas-wealth .cards-prop .cards p {
+    color: black;
+  }
+
+  .propostas-wealth .cards-prop .cards {
+    border: 1px solid black;
+  }
+
+  .assessoria .title-assessoria h2 {
+    color: white;
+  }
+
+  .assessoria .title-assessoria p {
+    color: white;
+  }
+
+  .assessoria .cards-assessoria .cards {
+    border: 1px solid black;
+  }
+
+  .assessoria .cards-assessoria .cards p {
+    color: rgb(0, 0, 0);
+  }
+
+  .assessoria h5 {
+    color: rgb(255, 255, 255);
+  }
+
+  .tabs-assessoria {
+    background-color: #1d1d1d;
+  }
+
+  .tabs-assessoria .title-tabs-assessoria h3 {
+    color: rgb(255, 255, 255);
+  }
+
+  .tabs-assessoria .content-tabs-assessoria .nav-tabs li a.active {
+    background-color: #1a1a1a;
+  }
+
+  .tabs-assessoria
+    .content-tabs-assessoria
+    .tab-content
+    .tab-pane
+    .content-tabs-main {
+    background-color: #1a1a1a;
+  }
+
+  .tabs-assessoria .content-tabs-assessoria .nav-tabs li a {
+    color: white;
+  }
+
+  .internacional .title-inter h2 {
+    color: white;
+  }
+
+  .internacional .title-inter h3 {
+    color: white;
+  }
+
+  .services-internacional .cards-services .cards {
+    background-color: #1a1a1a;
+  }
+
+  .internacional-last-text {
+    p {
+      color: white;
+    }
+  }
+
+  .credores .content-credores h3 {
+    color: white;
+  }
+
+  .credores .content-credores .btns-credores a {
+    background-color: #1a1a1a;
+  }
+
+  .cards-common-reag .cards:hover .disc {
+    background-color: #1a1a1a;
+  }
+
+  .educacao-financeira {
+    background-color: #1d1d1d;
+  }
+
+  .banner-internal .pagination-banner {
+    background-color: #1d1d1d;
+  }
+
+  .podcasts .flex-titles h2 {
+    color: white;
+  }
+
+  .podcasts .flex-titles .flex-texts p {
+    color: white;
+  }
+
+  .podcasts .flex-titles .flex-texts h4 {
+    color: white;
+  }
+
+  .podcasts .flex-titles .flex-texts a {
+    background-color: #1a1a1a;
+  }
+
+  .podcasts .flex-titles h2 {
+    color: white !important;
+  }
+
+  .infos-contato-reag .title-infos h2 {
+    color: white;
+  }
+
+  .infos-contato-reag .title-infos p {
+    color: white;
+  }
+
+  .checkbox p {
+    color: white;
+  }
+
+  .btns-main .up {
+    background-color: #1a1a1a;
+  }
+
+  .btns-main .clear {
+    color: white;
+  }
+
+  .box-infos-contato {
+    border: 1px solid white;
+  }
+
+  .box-infos-contato .line .content span {
+    color: white;
+  }
+
+  .box-infos-contato .line .content p {
+    color: white;
+  }
+
+  .box-infos-contato .line img {
+    filter: grayscale(1) brightness(3.5);
   }
 }
