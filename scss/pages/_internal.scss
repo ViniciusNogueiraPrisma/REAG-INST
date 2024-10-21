@@ -2391,6 +2391,7 @@
     display: flex;
     justify-content: space-between;
     gap: 32px;
+    align-items: baseline;
 
     @media (max-width: 991px) {
       flex-direction: column;
