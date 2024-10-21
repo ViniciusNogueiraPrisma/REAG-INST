@@ -111,6 +111,10 @@ svg {
 
 .container-responsivo-full {
   @media (min-width: 1260px) {
+    max-width: 1130px !important;
+  }
+
+  @media (min-width: 1360px) {
     max-width: 1280px !important;
   }
 
