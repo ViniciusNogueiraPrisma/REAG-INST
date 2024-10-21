@@ -238,6 +238,7 @@
     display: flex;
     align-items: flex-end;
     gap: 32px;
+    overflow: hidden;
 
     @media (max-width: 1300px) {
       flex-direction: column;
@@ -1000,6 +1001,7 @@
   .itens-midia {
     display: flex;
     gap: 32px;
+    overflow: hidden;
 
     @media (max-width: 991px) {
       flex-direction: column;
