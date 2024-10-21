@@ -329,10 +329,49 @@ footer {
   }
 
   .list-footer-last {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
     margin-top: 28px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .itens {
+      .canais {
+        display: grid;
+        margin-top: 10px;
+
+        h6 {
+          margin: 0;
+          padding: 0;
+          margin-bottom: 10px;
+
+          color: var(--estrutura-footer-content-default, #fff);
+          font-family: var(--font-family-body, "Open Sans");
+          font-size: var(--Font-size-medium, 14px);
+          font-style: normal;
+          font-weight: 700;
+          line-height: var(--Font-line-height-medium, 24px);
+        }
+
+        a {
+          text-decoration: none;
+          color: var(--estrutura-footer-content-default, #fff);
+          font-family: var(--font-family-body, "Open Sans");
+          font-size: var(--Font-size-medium, 14px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: var(--Font-line-height-medium, 24px);
+        }
+      }
+    }
 
     .list-menu {
       display: flex;
