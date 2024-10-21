@@ -2224,77 +2224,7 @@
   }
 }
 
-.mapa-site {
-  display: none;
 
-  @media (max-width: 1199px) {
-    display: flex !important;
-    flex-direction: column;
-
-    button {
-      padding: 0px;
-      margin: 0px;
-      width: fit-content;
-      background-color: unset;
-      border: unset;
-
-      display: flex;
-      align-items: center;
-      gap: 8px;
-
-      color: var(--text-body-large, #383838);
-      font-family: var(--font-family-body, "Open Sans");
-      font-size: var(--font-font-size-font-size-body-small, 12px);
-      font-style: normal;
-      font-weight: 700;
-      line-height: var(
-        --font-line-height-font-size-body-small,
-        18px
-      ); /* 150% */
-    }
-  }
-
-  .list-footer-last {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    margin-top: 28px;
-    // justify-content: space-between;
-
-    .list-menu {
-      display: flex;
-      flex-direction: column;
-
-      h5 {
-        margin: 0;
-        padding: 0;
-        margin-bottom: 16px;
-
-        color: var(--text-body-large, #383838);
-        font-family: var(--font-family-body, "Open Sans");
-        font-size: var(--font-font-size-font-size-body-small, 15px);
-        font-style: normal;
-        font-weight: 700;
-        line-height: var(--font-line-height-font-size-body-medium, 24px);
-      }
-
-      a {
-        text-decoration: none;
-        color: var(--text-body-small, #666);
-        font-family: var(--font-family-body, "Open Sans");
-        font-size: var(--font-font-size-font-size-body-small, 14px);
-        font-style: normal;
-        font-weight: 400;
-        line-height: var(--font-line-height-font-size-body-medium, 24px);
-        margin-bottom: 12px;
-      }
-    }
-
-    a:last-child {
-      margin-bottom: 0px;
-    }
-  }
-}
 
 .logo-mobile-main {
   background-color: #095534;
