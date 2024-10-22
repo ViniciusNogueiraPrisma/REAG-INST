@@ -446,12 +446,19 @@
 
         &:before {
           content: "";
+          // background: linear-gradient(
+          //   180deg,
+          //   rgba(0, 0, 0, 0.56) 3.69%,
+          //   rgba(0, 0, 0, 0.09) 29.98%,
+          //   rgba(0, 0, 0, 0.56) 100%
+          // );
+
           background: linear-gradient(
             180deg,
-            rgba(0, 0, 0, 0.56) 3.69%,
-            rgba(0, 0, 0, 0.09) 29.98%,
-            rgba(0, 0, 0, 0.56) 100%
+            rgba(0, 0, 0, 0.64) 3.69%,
+            rgba(0, 0, 0, 0.32) 100%
           );
+
           width: 100%;
           height: 920px;
           position: absolute;

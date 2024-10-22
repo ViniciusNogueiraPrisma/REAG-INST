@@ -474,4 +474,9 @@
   .box-infos-contato .line img {
     filter: grayscale(1) brightness(3.5);
   }
+
+  .tipos-fundos .cards:hover {
+    transition: 0.3s;
+    background: var(--surface-secondary, #1c1e1e);
+  }
 }

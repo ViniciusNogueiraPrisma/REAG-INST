@@ -3318,6 +3318,12 @@
     padding: 24px;
     border-radius: 8px;
     background: var(--surface-primary, #095534);
+    transition: 0.3s !important;
+
+    &:hover {
+      transition: 0.3s;
+      background: var(--surface-secondary, #2f4d44);
+    }
 
     a {
       display: flex;
@@ -4065,6 +4071,22 @@
   }
 
   #table-ofertas {
+    th:nth-child(3) {
+      text-align: center !important;
+    }
+
+    th:nth-child(4) {
+      text-align: center !important;
+    }
+
+    tr td:nth-child(3) {
+      text-align: center !important;
+    }
+
+    tr td:nth-child(4) {
+      text-align: center !important;
+    }
+
     th {
       background-color: #095534;
     }
@@ -4733,5 +4755,19 @@
 .logo-footer {
   img {
     width: 110px;
+  }
+}
+
+.sorting_asc {
+  &:before {
+    font-size: 16px !important;
+  }
+}
+
+.sorting {
+  &::after {
+    font-size: 14px !important;
+    margin-right: 1px;
+    margin-top: -2px;
   }
 }
