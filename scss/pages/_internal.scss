@@ -4771,3 +4771,9 @@
     margin-top: -2px;
   }
 }
+
+#videoPlayer {
+  @media (max-width: 686px) {
+    width: 320px;
+  }
+}
