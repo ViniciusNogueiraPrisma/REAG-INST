@@ -149,6 +149,14 @@ window.addEventListener(
   }, 200)
 );
 
+var modalVideo = document.getElementById("modalVideo");
+var videoPlayer = document.getElementById("videoPlayer");
+
+modalVideo.addEventListener("hidden.bs.modal", function () {
+  videoPlayer.pause();
+  videoPlayer.currentTime = 0;
+});
+
 // Tooltip
 
 var tooltipTriggerList = [].slice.call(

@@ -15,10 +15,10 @@
       href="images/favicon-152px.jpg"
       sizes="152x152"
     />
+
     <meta property="og:url" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="" />
-
     <meta property="og:description" content="" />
 
     <meta
@@ -1233,7 +1233,7 @@
             brasileiro.
           </h2>
 
-          <a href="#">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modalVideo">
             <img src="images/icon-play.svg" alt="" />
             Assista ao vídeo</a
           >
@@ -1430,6 +1430,31 @@
             <input type="text" placeholder="E-mail" />
             <input type="submit" value="Cadastrar" />
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal video home -->
+
+    <div
+      class="modal fade"
+      id="modalVideo"
+      tabindex="-1"
+      aria-labelledby="modalVideoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-home">
+          <div class="close-modal">
+            <a
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></a>
+          </div>
+
+          <video id="videoPlayer" src="videos/home.mp4" controls></video>
         </div>
       </div>
     </div>

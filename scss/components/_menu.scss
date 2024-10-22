@@ -402,6 +402,16 @@ body {
   right: 0;
   background-color: var(--text-white);
 
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    @media (max-width: 757px) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+
   .menu-body {
     display: flex;
     overflow: auto;

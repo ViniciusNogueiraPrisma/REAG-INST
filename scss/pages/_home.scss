@@ -301,6 +301,14 @@
       .swiper-wrapper {
         margin-top: 8px;
 
+        .swiper-slide:last-child {
+          margin-right: 220px !important;
+
+          @media (max-width: 430px) {
+            margin-right: auto !important;
+          }
+        }
+
         .swiper-slide {
           border-radius: 8px;
           width: 328px;
@@ -861,6 +869,14 @@
 .cards-comunicacao {
   margin-top: 48px;
 
+  .swiper-slide:last-child {
+    margin-right: 50px !important;
+
+    @media (max-width: 991px) {
+      margin-right: 0px !important;
+    }
+  }
+
   .swiper-slide {
     overflow: hidden;
     width: 328px !important;
@@ -936,6 +952,151 @@
           overflow: hidden;
           text-overflow: ellipsis;
           transition: 0.3s;
+
+          color: var(--card-text-title-default, #080808);
+          font-family: var(--font-family-body, "Open Sans");
+          font-size: var(--Font-size-large, 16px);
+          font-style: normal;
+          font-weight: 700;
+          line-height: var(--Font-line-height-large, 26px);
+        }
+
+        p {
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          color: var(--card-text-text-default, #666);
+          font-family: var(--font-family-body, "Open Sans");
+          font-size: var(--Font-size-medium, 14px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: var(--Font-line-height-medium, 24px);
+        }
+      }
+
+      .final-link {
+        a {
+          text-decoration: none;
+          cursor: pointer;
+          color: var(--card-text-text-default, #666);
+          font-family: var(--font-family-body, "Open Sans");
+          font-size: var(--Font-size-medium, 14px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: var(--Font-line-height-medium, 24px); /* 171.429% */
+        }
+      }
+    }
+  }
+
+  .swiper-pagination {
+    position: relative !important;
+    margin-top: 28px;
+    // display: none;
+
+    .swiper-pagination-bullet {
+      transition: 0.3s;
+    }
+
+    .swiper-pagination-bullet-active {
+      transition: 0.3s;
+      background-color: #095534;
+      color: #095534;
+    }
+
+    @media (max-width: 1200px) {
+      display: block;
+    }
+  }
+}
+
+.cards-financeiro {
+  margin-top: 48px;
+
+  .swiper-slide:last-child {
+    margin-right: 50px !important;
+
+    @media (max-width: 991px) {
+      margin-right: 0px !important;
+    }
+  }
+
+  .swiper-slide {
+    overflow: hidden;
+    width: 300px !important;
+    border-radius: var(--Default-Card-border-radius, 16px);
+    border: 1px solid var(--card-border-default, #e6e6e6);
+    background: var(--card-bg-color-default, #fff);
+
+    &:hover {
+      .disc {
+        border: 1px solid var(--badge-border-hover, #095534);
+        background: var(--badge-bg-hover, #2f4d44);
+        transition: 0.3s;
+
+        span {
+          color: white !important;
+        }
+      }
+
+      h3 {
+        transition: 0.3s;
+        color: #095534 !important;
+      }
+    }
+
+    .imagem-card {
+      img {
+        width: 328px !important;
+        height: 200px;
+        object-fit: cover;
+      }
+    }
+
+    .content-card {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .disc {
+        width: fit-content;
+        padding: 4px 8px;
+        border-radius: 4px;
+        border: 1px solid var(--badge-border-default, #f0f0f2);
+        display: flex;
+        transition: 0.3s;
+
+        span {
+          transition: 0.3s;
+          color: var(--badge-text-default, #666);
+          font-family: var(--font-family-body, "Open Sans");
+          font-size: var(--Font-size-small, 12px);
+          font-style: normal;
+          font-weight: 400;
+          line-height: var(--Font-line-height-small, 20px); /* 166.667% */
+        }
+      }
+
+      .main-informations {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        justify-content: space-between;
+
+        h3 {
+          margin: 0;
+          padding: 0;
+
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
 
           color: var(--card-text-title-default, #080808);
           font-family: var(--font-family-body, "Open Sans");

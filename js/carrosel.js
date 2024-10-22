@@ -10,6 +10,7 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".mySwiper-grupo-home", {
   slidesPerView: "auto",
   spaceBetween: 8,
+  // loop: true,
 
   navigation: {
     nextEl: ".swiper-button-next",
